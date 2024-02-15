@@ -1,11 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    width: 75px;
+    height: 25px;
+    margin: 10px;
+}
+
 #container {
-    border: 1px solid red;
+    width: 960px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .grid {
-    height: 100px;
-    width: 100px;
     border: 1px solid purple;
+
+}
+
+.grid:hover {
+    background-color: aqua;
 }
