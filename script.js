@@ -19,4 +19,14 @@ const button = document.querySelector('#sizeButton');
 button.addEventListener('click', () => {
     container.textContent = "";
     createGrid(parseInt(prompt("Enter the grid size")));
+    changeBG();
 });
+
+function changeBG() {
+    const targets = document.querySelectorAll('.grid');
+    targets.forEach((target) => {
+        target.addEventListener('mouseout',  () => {
+            target.setAttribute('style', 'border: 1px solid green;');
+        });
+        });
+    };
