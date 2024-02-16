@@ -25,8 +25,8 @@ button.addEventListener('click', () => {
 function changeBG() {
     const targets = document.querySelectorAll('.grid');
     targets.forEach((target) => {
-        target.addEventListener('mouseout',  () => {
-            target.setAttribute('style', 'border: 1px solid green;');
+        target.addEventListener('mouseout', function (e) {
+            e.target.style.background = 'red';
         });
-        });
-    };
+    });
+};
