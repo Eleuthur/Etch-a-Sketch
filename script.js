@@ -26,7 +26,8 @@ function changeBG() {
     const targets = document.querySelectorAll('.grid');
     targets.forEach((target) => {
         target.addEventListener('mouseout', function (e) {
-            e.target.style.background = 'red';
+            let color = Math.floor(Math.random() * 359);
+            e.target.style.background = `hsl(${color}, 100%, 20%)`;
         });
     });
 };
